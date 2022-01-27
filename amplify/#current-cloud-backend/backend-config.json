@@ -1,0 +1,47 @@
+{
+  "auth": {
+    "reactkycapp836ec5a4": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      }
+    }
+  },
+  "predictions": {
+    "faceId": {
+      "providerPlugin": "awscloudformation",
+      "service": "Rekognition",
+      "dependsOn": [],
+      "identifyType": "identifyEntities"
+    },
+    "textID": {
+      "providerPlugin": "awscloudformation",
+      "service": "RekognitionAndTextract",
+      "dependsOn": [],
+      "identifyType": "identifyText"
+    },
+    "textInterpret": {
+      "providerPlugin": "awscloudformation",
+      "service": "Comprehend",
+      "interpretType": "interpretText"
+    }
+  }
+}

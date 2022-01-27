@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-reactkycapp-dev-224824-authRole",
+      "UnauthRoleArn": "arn:aws:iam::769632626325:role/amplify-reactkycapp-dev-224824-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::769632626325:role/amplify-reactkycapp-dev-224824-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-reactkycapp-dev-224824-deployment",
+      "UnauthRoleName": "amplify-reactkycapp-dev-224824-unauthRole",
+      "StackName": "amplify-reactkycapp-dev-224824",
+      "StackId": "arn:aws:cloudformation:us-east-1:769632626325:stack/amplify-reactkycapp-dev-224824/fecbba30-7f23-11ec-8f87-1293b79fe18b",
+      "AmplifyAppId": "d2ycrpl0s70396"
+    },
+    "categories": {
+      "auth": {
+        "reactkycapp836ec5a4": {}
+      }
+    }
+  }
+}

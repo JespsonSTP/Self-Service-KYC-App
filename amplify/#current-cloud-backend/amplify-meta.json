@@ -1,0 +1,106 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-reactkycapp-dev-224824-authRole",
+      "UnauthRoleArn": "arn:aws:iam::769632626325:role/amplify-reactkycapp-dev-224824-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::769632626325:role/amplify-reactkycapp-dev-224824-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-reactkycapp-dev-224824-deployment",
+      "UnauthRoleName": "amplify-reactkycapp-dev-224824-unauthRole",
+      "StackName": "amplify-reactkycapp-dev-224824",
+      "StackId": "arn:aws:cloudformation:us-east-1:769632626325:stack/amplify-reactkycapp-dev-224824/fecbba30-7f23-11ec-8f87-1293b79fe18b",
+      "AmplifyAppId": "d2ycrpl0s70396"
+    }
+  },
+  "auth": {
+    "reactkycapp836ec5a4": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-reactkycapp-dev-224824-deployment/amplify-cfn-templates/auth/reactkycapp836ec5a4-cloudformation-template.json",
+        "logicalId": "authreactkycapp836ec5a4"
+      },
+      "lastPushTimeStamp": "2022-01-27T06:36:00.527Z",
+      "output": {
+        "UserPoolId": "us-east-1_NGpOHEliW",
+        "AppClientIDWeb": "4tvmcaed11bsmp1jh2sv7u1vgj",
+        "AppClientID": "5qkm70epqakjg1iva96n6vjprm",
+        "IdentityPoolId": "us-east-1:6d90bdd2-7aa9-47a3-b916-7fd40dec148c",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:769632626325:userpool/us-east-1_NGpOHEliW",
+        "IdentityPoolName": "reactkycapp836ec5a4_identitypool_836ec5a4__dev",
+        "UserPoolName": "reactkycapp836ec5a4_userpool_836ec5a4"
+      },
+      "lastPushDirHash": "K6Ii6T45wX4YLiDrQirl6xnuRxc="
+    }
+  },
+  "predictions": {
+    "faceId": {
+      "providerPlugin": "awscloudformation",
+      "service": "Rekognition",
+      "dependsOn": [],
+      "identifyType": "identifyEntities",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-reactkycapp-dev-224824-deployment/amplify-cfn-templates/predictions/faceId-template.json",
+        "logicalId": "predictionsfaceId"
+      },
+      "lastPushTimeStamp": "2022-01-27T06:36:00.589Z",
+      "output": {
+        "maxEntities": "0",
+        "celebrityDetectionEnabled": "true",
+        "region": "us-east-1"
+      },
+      "lastPushDirHash": "d9BvIsjL3ndldVu4x+YrRmEFZXY="
+    },
+    "textID": {
+      "providerPlugin": "awscloudformation",
+      "service": "RekognitionAndTextract",
+      "dependsOn": [],
+      "identifyType": "identifyText",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-reactkycapp-dev-224824-deployment/amplify-cfn-templates/predictions/textID-template.json",
+        "logicalId": "predictionstextID"
+      },
+      "lastPushTimeStamp": "2022-01-27T06:36:00.539Z",
+      "output": {
+        "format": "ALL",
+        "region": "us-east-1"
+      },
+      "lastPushDirHash": "3W4cm2ORmMF0PehPBdF6y7D1hag="
+    },
+    "textInterpret": {
+      "providerPlugin": "awscloudformation",
+      "service": "Comprehend",
+      "interpretType": "interpretText",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-reactkycapp-dev-224824-deployment/amplify-cfn-templates/predictions/textInterpret-template.json",
+        "logicalId": "predictionstextInterpret"
+      },
+      "lastPushTimeStamp": "2022-01-27T06:36:00.543Z",
+      "output": {
+        "region": "us-east-1",
+        "type": "ENTITIES"
+      },
+      "lastPushDirHash": "RjyMnbjX9eRwmnGo4+HAI9oopv4="
+    }
+  }
+}
